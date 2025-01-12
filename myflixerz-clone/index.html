@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Myflixerz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <img src="images/logo.png" class="logo" />
+        <a href="#"></a>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item nav-item-dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-link"
+                >Genre</a
+              >
+              <ul class="dropdown">
+                <li class="dropdown-item"><a href="#">Action</a></li>
+                <li class="dropdown-item"><a href="#">Biography</a></li>
+                <li class="dropdown-item"><a href="#">Drama</a></li>
+                <li class="dropdown-item"><a href="#">Horror</a></li>
+                <li class="dropdown-item"><a href="#">News</a></li>
+                <li class="dropdown-item"><a href="#">Science Fiction</a></li>
+                <li class="dropdown-item"><a href="#">TV Movie</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Action & Adventure</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Comedy</a></li>
+                <li class="dropdown-item"><a href="#">Family</a></li>
+                <li class="dropdown-item"><a href="#">Kids</a></li>
+                <li class="dropdown-item"><a href="#">Reality</a></li>
+                <li class="dropdown-item"><a href="#">Soap</a></li>
+                <li class="dropdown-item"><a href="#">War</a></li>
+                <li class="dropdown-item"><a href="#">Adventure</a></li>
+                <li class="dropdown-item"><a href="#">Crime</a></li>
+                <li class="dropdown-item"><a href="#">Fantasy</a></li>
+                <li class="dropdown-item"><a href="#">Music</a></li>
+                <li class="dropdown-item"><a href="#">Romance</a></li>
+                <li class="dropdown-item"><a href="#">Talk</a></li>
+                <li class="dropdown-item"><a href="#">War & Politics</a></li>
+                <li class="dropdown-item"><a href="#">Animation</a></li>
+                <li class="dropdown-item"><a href="#">Documentary</a></li>
+                <li class="dropdown-item"><a href="#">History</a></li>
+                <li class="dropdown-item"><a href="#">Mystery</a></li>
+                <li class="dropdown-item"><a href="#">Sci-Fi & Fantasy</a></li>
+                <li class="dropdown-item"><a href="#">Thriller</a></li>
+                <li class="dropdown-item"><a href="#">Western</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-item-dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-link"
+                >Country</a
+              >
+              <ul class="dropdown">
+                <li class="dropdown-item"><a href="#">Argentina</a></li>
+                <li class="dropdown-item"><a href="#">Australia</a></li>
+                <li class="dropdown-item"><a href="#">Austria</a></li>
+                <li class="dropdown-item"><a href="#">Belgium</a></li>
+                <li class="dropdown-item"><a href="#">Brazil</a></li>
+                <li class="dropdown-item"><a href="#">Canada</a></li>
+                <li class="dropdown-item"><a href="#">China</a></li>
+                <li class="dropdown-item">
+                  <a href="#">Czech Republic</a>
+                </li>
+                <li class="dropdown-item"><a href="#">Denmark</a></li>
+                <li class="dropdown-item"><a href="#">Finland</a></li>
+                <li class="dropdown-item"><a href="#">France</a></li>
+                <li class="dropdown-item"><a href="#">Germany</a></li>
+                <li class="dropdown-item"><a href="#">Hong Kong</a></li>
+                <li class="dropdown-item"><a href="#">Hungary</a></li>
+                <li class="dropdown-item"><a href="#">India</a></li>
+                <li class="dropdown-item"><a href="#">Ireland</a></li>
+                <li class="dropdown-item"><a href="#">Israel</a></li>
+                <li class="dropdown-item"><a href="#">Italy</a></li>
+                <li class="dropdown-item"><a href="#">Japan</a></li>
+                <li class="dropdown-item"><a href="#">Luxembourg</a></li>
+                <li class="dropdown-item"><a href="#">Mexico</a></li>
+                <li class="dropdown-item"><a href="#">Netherlands</a></li>
+                <li class="dropdown-item"><a href="#">New Zealand</a></li>
+                <li class="dropdown-item"><a href="#">Norway</a></li>
+                <li class="dropdown-item"><a href="#">Poland</a></li>
+                <li class="dropdown-item"><a href="#">Romania</a></li>
+                <li class="dropdown-item"><a href="#">Russia</a></li>
+                <li class="dropdown-item"><a href="#">South Africa</a></li>
+                <li class="dropdown-item"><a href="#">South Korea</a></li>
+                <li class="dropdown-item"><a href="#">Spain</a></li>
+                <li class="dropdown-item"><a href="#">Sweden</a></li>
+                <li class="dropdown-item"><a href="#">Switzerland</a></li>
+                <li class="dropdown-item"><a href="#">Taiwan</a></li>
+                <li class="dropdown-item"><a href="#">Thailand</a></li>
+                <li class="dropdown-item"><a href="#">United Kingdom</a></li>
+                <li class="dropdown-item">
+                  <a href="#">United States of A...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Movies</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">TV Shows</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Top Imdb</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Android app</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="javascript:void(0)" class="btn-login"
+          ><ion-icon class="icon" name="person-outline"></ion-icon>
+          <p>Login</p>
+        </a>
+      </div>
+
+      <div class="hero">
+        <h1 class="heading-primary">Find Movies, TV shows and more</h1>
+        <div class="search-box">
+          <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          <input type="text" name="search" placeholder="Enter Keywords..." />
+          <button type="button">
+            <ion-icon
+              class="arrow-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="description-box container">
+          <p class="description">
+            myflixer, watch online movies, movies streaming free, free movies,
+            free full hd movies, watch series online, watch full movies free,
+            download movies hd, series online free, series online hd, watch
+            <br />
+            series online free. <br />
+            Myflixer is blocked in your country? Use any mirror site listed here
+            <a href="#">https://myflixer.link/</a> to continue watching your
+            favorite movies and shows on Myflixer now.
+            <strong>The latest proxy link that you can use is</strong> :
+            <a href="#">https://myflixer.pw</a> . You can also follow our
+            Twitter page to stay updated here:
+            <a href="#">https://twitter.com/Myflixerdotto</a> <br />
+            If you are looking for a free movies site with 720 and 1080 HD
+            resolution, then Myflixer is what you need. We have over 300.000
+            videos and most of them is in HD with free access. Forget all the
+            <br />
+            hassle when you're trying to watch your favorite movies or shows on
+            other sites, on myflixer what you need to do is to click on Play
+            button and everything is set. Welcome to MyFlixer and hope <br />
+            that you will like the site.
+          </p>
+        </div>
+
+        <!-- Social media -->
+        <div class="social-media-box container">
+          <div class="shares">14.5k</div>
+          <div class="social-media facebook">
+            <i class="fa-brands fa-facebook-f"></i> <span>5.2k</span>
+          </div>
+          <div class="social-media twitter">
+            <i class="fa-brands fa-twitter"></i> <span>416</span>
+          </div>
+          <div class="social-media whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> <span>416</span>
+          </div>
+          <div class="social-media messenger">
+            <i class="fa-brands fa-facebook-messenger"></i> <span>407</span>
+          </div>
+          <div class="social-media reddit">
+            <i class="fa-brands fa-reddit-alien"></i> <span>7.4k</span>
+          </div>
+          <div class="social-media telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+        </div>
+      </section>
+      <!-- Movies cards section -->
+      <section class="section-movies">
+        <div class="categories container">
+          <p class="heading-secondary">Trending</p>
+          <a class="active" href="#"
+            ><i class="fa-solid fa-circle-play"></i> <span>Movies</span></a
+          >
+          <a href="#"><i class="fa-solid fa-list"></i> <span>TV Shows</span></a>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards-box container grid--8-cols">
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/78/c9/78c96f808a1e0d6691880772050f367c/78c96f808a1e0d6691880772050f367c.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Insidious: The Red Door</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">107m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="images/91670229ac9f3b6fb4d242d6b5511644.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Guardians of the Galax...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">150m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/b2/a2/b2a2078a74e2e3b53693554ce3fbdd64/b2a2078a74e2e3b53693554ce3fbdd64.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Barbie</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">114m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="images/b56a5aee9715743bb34b728e52b6bea0.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Oppenheimer</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">181m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/da/df/dadf60ba570cc675b9dba862ac398cdc/dadf60ba570cc675b9dba862ac398cdc.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Hidden Strike</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">103m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/e2/02/e202f50399e893e25922555a4332d8ee/e202f50399e893e25922555a4332d8ee.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Resident Evil: Death Isl...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">91m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/14/7b/147b3805a3dbcd91d4c1326d0c43cb3d/147b3805a3dbcd91d4c1326d0c43cb3d.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Miraculous: Ladybug &...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">107m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="images/f7975e92348f8055ee359ea5218d1aa5.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">The Flash</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">144m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/35/34/3534b9bf9505c28893f0204d0f77a00a/3534b9bf9505c28893f0204d0f77a00a.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Transformers: Rise of t...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">120m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/9a/e4/9ae44fc95e71fe3cbf5b43a2215236b1/9ae44fc95e71fe3cbf5b43a2215236b1.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Teenage Mutant Ninja...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">99m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/fc/7d/fc7de6b957d0dfb5f3b719c812093766/fc7de6b957d0dfb5f3b719c812093766.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">The Little Mermaid</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">98m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/a9/9b/a99ba7cd6b251e75c6723da994bc02b4/a99ba7cd6b251e75c6723da994bc02b4.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Fast X</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">142m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/21/56/2156a5ca22ecba2e96f7e459e14819ae/2156a5ca22ecba2e96f7e459e14819ae.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Sympathy for the Devil</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">90m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/27/7f/277fd25c2e84ee050da1ca3d0228cf3a/277fd25c2e84ee050da1ca3d0228cf3a.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Paradise</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">117m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">TS</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/67/7f/677f8af5b3641ba09964277253a36761/677f8af5b3641ba09964277253a36761.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Spider-Man: Across th...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">135m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/e5/a0/e5a02d6b78afd13554c6737c1da83cae/e5a02d6b78afd13554c6737c1da83cae.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Mission: Impossible - ...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">163m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/b2/99/b2994fa0604041dc45768186d0dfd207/b2994fa0604041dc45768186d0dfd207.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Joy Ride</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">95m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/d2/e2/d2e2dc4fb8cf9a5f7002d1b09d8f0f53/d2e2dc4fb8cf9a5f7002d1b09d8f0f53.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">The Beanie Bubble</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">110m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/a3/75/a37563b826ade8464fa9761564c8c962/a37563b826ade8464fa9761564c8c962.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Talk to Me</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">95m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/d4/6e/d46e0478e7349f8b2fecc134d8940286/d46e0478e7349f8b2fecc134d8940286.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Justice League: Warw...</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">90m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/ea/6f/ea6f48b2c8e63401bf6902fad7286b30/ea6f48b2c8e63401bf6902fad7286b30.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Sound of Freedom</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">131m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/c3/05/c30590d067779659a6252d4408319160/c30590d067779659a6252d4408319160.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Paint</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">96m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">HD</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/1e/9e/1e9efbf118acd1e7661d144868dc5ef5/1e9efbf118acd1e7661d144868dc5ef5.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">John Wick: Chapter 4</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">120m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="film-quality">CAM</div>
+            <img
+              src="https://img.myflixerz.to/xxrz/250x400/201/ad/ce/adcee972deb64315ca1dced460c02bad/adcee972deb64315ca1dced460c02bad.jpg"
+              width="170px"
+              height="250px"
+            />
+            <h3 class="film-name">
+              <a href="#">Haunted Mansion</a>
+            </h3>
+            <div class="film-info">
+              <span class="year">2023</span>
+              <span class="dot"></span>
+              <span class="views">123m</span>
+              <span class="type">Movie</span>
+            </div>
+            <div class="overlay">
+              <div class="play-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Movies -->
+      <section class="section-latest">
+        <div class="container latest">
+          <p class="heading-secondary">Latest Movies</p>
+
+          <!-- Cards -->
+          <div class="cards-box grid--8-cols">
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/ed/ff/edff0bf05cc50fb9ca0f528eea05df89/edff0bf05cc50fb9ca0f528eea05df89.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Untold: Jake Paul the P...</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">70m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/9f/1f/9f1f27419c01f68e34c2df64798d47ae/9f1f27419c01f68e34c2df64798d47ae.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">To Freedom</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">93m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/80/b3/80b3bf7a3cd4ba559d5e02a65cb8290a/80b3bf7a3cd4ba559d5e02a65cb8290a.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">The River Wild</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">91m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/76/14/7614e75519f1c62f2206d6d610408196/7614e75519f1c62f2206d6d610408196.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">I Am Rage</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">89m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/81/be/81beadf58a4cf5cdcde9a0656ce5ed90/81beadf58a4cf5cdcde9a0656ce5ed90.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Devil's Peak</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">98m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/56/82/568263f404c844798f3138a735a9f0d5/568263f404c844798f3138a735a9f0d5.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Arranged Love</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">84m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/aa/d2/aad2613ce2b3b982eac216abd0c13fb1/aad2613ce2b3b982eac216abd0c13fb1.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Aloha Heart</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">84m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/21/56/2156a5ca22ecba2e96f7e459e14819ae/2156a5ca22ecba2e96f7e459e14819ae.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Sympathy for the Devil</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">90m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/b2/99/b2994fa0604041dc45768186d0dfd207/b2994fa0604041dc45768186d0dfd207.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Joy Ride</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">95m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/7d/14/7d144c0d4b6bb21fe0a68f5c7e5237ad/7d144c0d4b6bb21fe0a68f5c7e5237ad.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Pardoned by Grace</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">90m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/7a/22/7a223550efae93fc96542e76c6046fb3/7a223550efae93fc96542e76c6046fb3.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Zoey 102</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">101m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/ee/0e/ee0eae330c366679e2e8acbdf8c94cdc/ee0eae330c366679e2e8acbdf8c94cdc.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Jim Gaffigan: Dark Pale</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">64m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/6d/a2/6da2009a3cfa1a58f6e9c5d21f01f48a/6da2009a3cfa1a58f6e9c5d21f01f48a.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Happiness for Beginners</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">103m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/fc/7d/fc7de6b957d0dfb5f3b719c812093766/fc7de6b957d0dfb5f3b719c812093766.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">The Little Mermaid</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">98m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/d4/6e/d46e0478e7349f8b2fecc134d8940286/d46e0478e7349f8b2fecc134d8940286.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Justice League: Warw...</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">90m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/a9/82/a982fdb426f0216725255b2e7a1a8b21/a982fdb426f0216725255b2e7a1a8b21.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">The Venture Bros.: Rad...</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">84m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/e2/02/e202f50399e893e25922555a4332d8ee/e202f50399e893e25922555a4332d8ee.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Resident Evil: Death Isl...</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">91m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/68/aa/68aaf35e883ff411ea28aa9fa3277b45/68aaf35e883ff411ea28aa9fa3277b45.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">They Cloned Tyrone</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">122m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/ab/b8/abb81f9ac5440afadb769d518d2e7db0/abb81f9ac5440afadb769d518d2e7db0.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Limbo</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">108m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/f2/56/f2564208e6a8a4174412134acb0875a7/f2564208e6a8a4174412134acb0875a7.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Bones of Crows</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">122m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/0e/90/0e90e25bce68a06d3c65ba2fed410ed1/0e90e25bce68a06d3c65ba2fed410ed1.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Ruby Gillman, Teenage...</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">91m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/f7/97/f7975e92348f8055ee359ea5218d1aa5/f7975e92348f8055ee359ea5218d1aa5.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">The Flash</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">144m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/c9/55/c955693670292d9e2f6d8b7844f939a8/c955693670292d9e2f6d8b7844f939a8.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Call Her King</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">120m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="film-quality">HD</div>
+              <img
+                src="https://img.myflixerz.to/xxrz/250x400/201/43/70/43702aa02ace539cf62ed5c01439ed6e/43702aa02ace539cf62ed5c01439ed6e.jpg"
+                width="170px"
+                height="250px"
+              />
+              <h3 class="film-name">
+                <a href="#">Bird Box Barcelona</a>
+              </h3>
+              <div class="film-info">
+                <span class="year">2023</span>
+                <span class="dot"></span>
+                <span class="views">124m</span>
+                <span class="type">Movie</span>
+              </div>
+              <div class="overlay">
+                <div class="play-circle">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TV Shows -->
+        <section class="section-latest">
+          <div class="container latest">
+            <p class="heading-secondary">Latest TV Shows</p>
+  
+            <!-- Cards -->
+            <div class="cards-box grid--8-cols">
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/4f/ae/4faed75695e47c980403bb7866adb485/4faed75695e47c980403bb7866adb485.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">New Leash on Life</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 5</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/12/9b/129b6051c02dfd865c9560c3c65fc448/129b6051c02dfd865c9560c3c65fc448.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">The Lost Flowers of Ali...</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 3</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/e7/34/e7349b794d94a0213d6d1652260d88c5/e7349b794d94a0213d6d1652260d88c5.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">The Chi</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 6</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 1</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/5c/af/5caf1d5aecfd2c44b7ec641aa0777346/5caf1d5aecfd2c44b7ec641aa0777346.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Tacoma FD</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 4</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 3</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/76/ee/76eeb4346deca8ba24b68d4c7dee3a60/76eeb4346deca8ba24b68d4c7dee3a60.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Project Runway</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 20</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 9</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/e1/60/e16053cb89588429e79436f14e5d92d2/e16053cb89588429e79436f14e5d92d2.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Outchef'd</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 2</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 8</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/8a/56/8a5655e08d0ba8b9c43f3d6ca01663d2/8a5655e08d0ba8b9c43f3d6ca01663d2.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">My Magic Closet</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 8</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/81/97/81976c4d1eccd0704f52300f6536c535/81976c4d1eccd0704f52300f6536c535.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">My Adventures with Su...</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 6</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/9b/e4/9be427022ea593b896b4bc33729e299e/9be427022ea593b896b4bc33729e299e.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Minx</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 2</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 3</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/32/d9/32d9863a9aef298596c319d2de11748a/32d9863a9aef298596c319d2de11748a.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Jersey Shore: Family V...</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 6</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 9</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/8b/74/8b74d523c229dbade33ed514f2790da8/8b74d523c229dbade33ed514f2790da8.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Heels</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 2</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 2</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/fe/e5/fee5334e168a7c1626f7a6e3679899c6/fee5334e168a7c1626f7a6e3679899c6.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Fatal Seduction</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 14</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/5f/46/5f468cce4c1c9221ab84ab8115ecdfbd/5f468cce4c1c9221ab84ab8115ecdfbd.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">All the Queen's Men</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 3</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 4</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/6d/61/6d615490579cc34a566a9d546281679a/6d615490579cc34a566a9d546281679a.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Generation Gap</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 2</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 6</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/75/f7/75f78526f5b83d4f28125c0206bbb472/75f78526f5b83d4f28125c0206bbb472.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Double Parked</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 8</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/2e/b3/2eb38a3fd0a7de2dfae2cb171e505ab1/2eb38a3fd0a7de2dfae2cb171e505ab1.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Average Joe</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 7</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/52/8f/528f6bbe543b4f29820608c0104c34ad/528f6bbe543b4f29820608c0104c34ad.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Alone</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 10</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 9</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/3b/5c/3b5c16e5094f6d279bccc8cb1c607c0f/3b5c16e5094f6d279bccc8cb1c607c0f.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">60 Days In</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 8</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 8</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/f8/e4/f8e431276b5e14b4977b42a45f8dfda0/f8e431276b5e14b4977b42a45f8dfda0.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Dominator of Martial G...</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 30</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/41/bc/41bc62c826dffe04858bbcab61f7930e/41bc62c826dffe04858bbcab61f7930e.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Let's Date, Professor Xie</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 24</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/bd/f0/bdf081fa2bb962ef7973baa490bfa1c9/bdf081fa2bb962ef7973baa490bfa1c9.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Ten Years</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 24</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/12/e7/12e7b03dd4c6f2abb675a00e75dfc83c/12e7b03dd4c6f2abb675a00e75dfc83c.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">V.C. Andrews' Dawn</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 4</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/98/14/98141e1a78d0f64b850f17755d57b031/98141e1a78d0f64b850f17755d57b031.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Stars on Mars</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 1</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 8</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="film-quality">HD</div>
+                <img
+                  src="https://img.myflixerz.to/xxrz/250x400/201/b6/2c/b62c679989d4ba9ac02eb3e2948a1735/b62c679989d4ba9ac02eb3e2948a1735.jpg"
+                  width="170px"
+                  height="250px"
+                />
+                <h3 class="film-name">
+                  <a href="#">Long Lost Family</a>
+                </h3>
+                <div class="film-info">
+                  <span class="year">SS 13</span>
+                  <span class="dot"></span>
+                  <span class="views">EPS 5</span>
+                  <span class="type">TV</span>
+                </div>
+                <div class="overlay">
+                  <div class="play-circle">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

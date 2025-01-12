@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", Arial;
+}
+
+.header {
+  width: 100%;
+  height: 231.95px;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 10rem;
+}
+
+.nav-item .nav-link:link,
+.nav-item .nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-login:link,
+.btn-login:visited {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.btn-login p {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.btn-login .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.dropdown-link:link,
+.dropdown-link:visited {
+  position: relative;
+}
+
+.dropdown {
+  list-style: none;
+  background-color: #fff;
+  padding: 2rem 4rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.4rem;
+  row-gap: 0.8rem;
+  position: absolute;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.dropdown-item a:link,
+.dropdown-item a:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.dropdown-item a:hover,
+.dropdown-item a:active {
+  background-color: #339af0;
+  color: #fff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-item-dropdown:hover .dropdown {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  margin-top: 6.8rem;
+  position: relative;
+}
+
+.search-box {
+  margin-top: 2.4rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.search-box input {
+  width: 900px;
+  height: 70px;
+  border: none;
+  border-radius: 45px;
+  padding: 2rem 6rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  background: #fff;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.search-box input::placeholder {
+  font-size: 2.4rem;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.search-box button {
+  background-color: #339af0;
+  padding: 2rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.search-box button .arrow-icon {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+}
+
+/* Main content */
+.description-box {
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+.description a:link,
+.description a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Social media */
+.social-media-box {
+  margin: 5.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  flex-basis: 120px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-media:hover {
+  transform: translateY(-4px);
+}
+
+.shares {
+  position: relative;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.shares::after {
+  content: "Shares";
+  font-size: 1rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 20%;
+}
+
+.social-media-box i {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.facebook {
+  background-color: #4267b2;
+  color: #fff;
+}
+.facebook:hover {
+  background-color: #6784c0;
+}
+
+.twitter {
+  background-color: #55acee;
+  color: #fff;
+}
+.twitter:hover {
+  background-color: #76bcf0;
+}
+.whatsapp {
+  background-color: #25d366;
+  color: #fff;
+}
+.whatsapp:hover {
+  background-color: #50db84;
+}
+.messenger {
+  background-color: #339af0;
+  color: #fff;
+}
+.messenger:hover {
+  background-color: #68a0fe;
+}
+.reddit {
+  background-color: #f76707;
+  color: #fff;
+}
+.reddit:hover {
+  background-color: #fe6932;
+}
+.telegram {
+  background-color: #0088cc;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.telegram:hover {
+  background-color: #329fd5;
+}
+
+.categories {
+  margin: 3.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.2rem;
+}
+
+.categories a:link,
+.categories a:visited {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.active {
+  background-color: #3e8afa;
+  color: #fff !important;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+}
+
+/* **************************** */
+/* Movie Cards */
+/* .cards-box {
+  
+} */
+.card {
+  position: relative;
+}
+
+.card img {
+  border-radius: 9px;
+}
+
+.film-quality {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  z-index: 999;
+}
+.film-name {
+  margin-top: 0.5rem;
+}
+
+.film-name a:link,
+.film-name a:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+}
+
+.film-name a:hover,
+.film-name a:active {
+  color: #3e8afa;
+}
+
+.film-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.views {
+  margin-right: 2.4rem;
+}
+
+.type {
+  border: 1px solid #555;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 5.1rem;
+  right: 0;
+  left: 0;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay:hover .play-circle {
+  background-color: #3e8afa;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:hover i {
+  font-size: 2.6rem;
+  color: #fff;
+}
+
+.latest {
+  margin: 9.6rem auto;
+}

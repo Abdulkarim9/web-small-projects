@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflex Clone</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ioicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="my-navbar">
+        <img src="img/Netflix-Logo.png" alt="" class="logo" />
+        <div class="cta">
+          <select class="lan-options" name="LanguageSelect">
+            <ion-icon name="globe-outline"></ion-icon>
+            <option class="lan-option" lang="tr" label="Türkçe" value="tr-TR">
+              Türkçe
+            </option>
+            <option class="lan-option" lang="en" label="English" value="en-EN">
+              English
+            </option>
+          </select>
+          <a href="login.html" class="sign-in--btn">Sign In</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1 class="hero-heading">Unlimited movies, TV shows, <br />and more</h1>
+        <p class="hero-text">Watch anywhere. Cancel anytime.</p>
+        <p class="hero-cta--text">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="cta-form">
+          <form action="">
+            <input type="email" name="email" placeholder="Email address" />
+          </form>
+          <button class="cta-btn" type="button">
+            Get Started
+            <ion-icon
+              class="cta-icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-features">
+        <div class="feature-cards">
+          <div class="feature-card">
+            <img src="img/img01.png" alt="" class="feature-img" />
+            <p class="feature-heading">Enjoy on your TV</p>
+            <p class="feature-text">
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="img/img02.png" alt="" class="feature-img" />
+            <p class="feature-heading">Watch everywhere</p>
+            <p class="feature-text">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="img/img03.png" alt="" class="feature-img" />
+            <p class="feature-heading">Create profiles for kids</p>
+            <p class="feature-text">
+              Create profiles for kids Send kids on adventures with their
+              favorite characters in a space made just for them—free with your
+              membership.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="img/img04.png" alt="" class="feature-img" />
+            <p class="feature-heading">Download your shows to watch offline</p>
+            <p class="feature-text">
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-faq">
+        <div class="accordian-items">
+          <h2 class="faq-heading">Frequently Asked Questions</h2>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">What is Netflix?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, <br />documentaries, and
+                more on thousands of internet-connected devices. <br />
+                <br />
+                You can watch as much as you want, whenever you want without a
+                single commercial – all for one low monthly <br />price. There's
+                always something new to discover and new TV shows and movies are
+                added every week!
+              </p>
+            </div>
+          </div>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">How much does Netflix cost?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                streaming device, all for one fixed monthly fee. <br />Plans
+                range from 63.99 TL to 130.99 TL a month. No extra costs, no
+                contracts.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">Where can I watch?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                Watch anywhere, anytime. Sign in with your Netflix account to
+                watch instantly on the web at netflix.com from your personal
+                computer or on any internet-connected device that offers the
+                Netflix app, including smart TVs, smartphones, tablets,
+                streaming media players and game consoles. <br /><br />You can
+                also download your favorite shows with the iOS, Android, or
+                Windows 10 app. Use downloads to watch while you're on the go
+                and without an internet connection. Take Netflix with you
+                anywhere.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">How do I cancel?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                Netflix is flexible. There are no pesky contracts and no
+                commitments. You can easily cancel your account online <br />in
+                two clicks. There are no cancellation fees – start or stop your
+                account anytime.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">What can I watch on Netflix?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                Netflix has an extensive library of feature films,
+                documentaries, TV shows, anime, award-winning Netflix
+                <br />originals, and more. Watch as much as you want, anytime
+                you want.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-item">
+            <div class="accordian-question-box">
+              <p class="accordian-question">Is Netflix good for kids?</p>
+              <ion-icon class="open-icon" name="add-outline"></ion-icon>
+            </div>
+            <div class="accordian-answer-box">
+              <p class="accordian-answer">
+                The Netflix Kids experience is included in your membership to
+                give parents control while kids enjoy family-friendly TV shows
+                and movies in their own space. <br /><br />Kids profiles come
+                with PIN-protected parental controls that let you restrict the
+                maturity rating of content kids can watch and block specific
+                titles you don’t want kids to see.
+              </p>
+            </div>
+          </div>
+          <p class="hero-cta--text cta-faq">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="cta-form faq-cta">
+            <form action="">
+              <input type="email" name="email" placeholder="Email address" />
+            </form>
+            <button class="cta-btn" type="button">
+              Get Started
+              <ion-icon
+                class="cta-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="contacts">
+          <p class="phone-number">
+            Questions? Call
+            <a href="tel:0850-390-7444" class="footer-link number-link"
+              >0850-390-7444</a
+            >
+          </p>
+          <a href="#" class="footer-link">FAQ</a>
+          <a href="#" class="footer-link">Investor Relations</a>
+          <a href="#" class="footer-link">Terms of Use</a>
+          <a href="#" class="footer-link">Contact Us</a>
+          <select class="lan-options" name="LanguageSelect">
+            <ion-icon name="globe-outline"></ion-icon>
+            <option class="lan-option" lang="tr" label="Türkçe" value="tr-TR">
+              Türkçe
+            </option>
+            <option class="lan-option" lang="en" label="English" value="en-EN">
+              English
+            </option>
+          </select>
+          <p class="footer-netflex--text">Netflix Turkey</p>
+        </div>
+        <div class="resources">
+          <a href="#" class="footer-link">Help Center</a>
+          <a href="#" class="footer-link">Jobs</a>
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Speed Test</a>
+        </div>
+        <div class="accounts">
+          <a href="#" class="footer-link">Account</a>
+          <a href="#" class="footer-link">Redeem Gift Cards</a>
+          <a href="#" class="footer-link">Cookie Preferences</a>
+          <a href="#" class="footer-link">Legal Notices</a>
+        </div>
+        <div class="feature-links">
+          <a href="#" class="footer-link">Media Center</a>
+          <a href="#" class="footer-link">Ways to Watch</a>
+          <a href="#" class="footer-link">Corporate Information</a>
+          <a href="#" class="footer-link">Only on Netflix</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

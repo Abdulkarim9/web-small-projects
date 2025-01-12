@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "DS-DIGIT";
+  src: url("font/DS-DIGIT.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #333;
+}
+
+.timer {
+  width: 70rem;
+  margin: 200px auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.6rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  background-color: greenyellow;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn--start {
+  background-color: #51cf66;
+}
+
+.btn--stop {
+  background-color: #f03e3e;
+}
+
+.btn--reset {
+  background-color: #ffd43b;
+}
+
+.btn--start:hover {
+  background-color: #40c057;
+}
+
+.btn--stop:hover {
+  background-color: #e03131;
+}
+
+.btn--reset:hover {
+  background-color: #fcc419;
+}

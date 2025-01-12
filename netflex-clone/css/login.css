@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.login-header {
+  width: 100%;
+  height: 1200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 30, 0.9),
+      rgba(0, 0, 30, 0.6)
+    ),
+    url(../img/netflix-brand-hero-image.jpg);
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin: 1rem 0 0 2rem;
+}
+
+.login-container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 30, 0.9), rgba(0, 0, 30, 0.6));
+  color: #fff;
+  border-radius: 8px;
+}
+
+.login-container a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.login-container a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.login-heading {
+  margin-bottom: 2rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #c70000;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.checkbox-item input[type="checkbox"] {
+  margin-bottom: 0;
+}
+.checkbox-item label {
+  flex-shrink: 0;
+}
+
+.need-help:link,
+.need-help:visited {
+  color: #777;
+}
+
+.new-help {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.new-help a:link,
+a:visited {
+  color: #fff;
+}
+
+.learn-more {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 4rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 4rem 0;
+  background-color: #121314be;
+  color: #fff;
+  position: absolute;
+  bottom: -28rem;
+  left: 0;
+  width: 100%;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: underline #ccc;
+  display: block;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.number-link:link,
+.number-link:visited {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+.footer-container .lan-options {
+  margin: 2rem 0 2rem 0;
+}
+
+.footer-netflex--text,
+.footer-container p {
+  color: #ccc;
+}

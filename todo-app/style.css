@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.todo--app-container {
+  width: 80rem;
+  margin: 10rem auto;
+}
+
+input {
+  width: 90%;
+  padding: 1.8rem 2.4rem;
+  border: 2px solid #1c7ed6;
+  border-radius: 9px;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.btn-add-todo {
+  padding: 1.8rem 2.4rem;
+  border: none;
+  border-radius: 9px;
+  background-color: #1c7ed6;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-add-todo:hover {
+  background-color: #1864ab;
+}
+
+.todos {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #b2f2bb;
+  border-radius: 9px;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+}
+
+.btn-completed {
+  padding: 1.8rem 2.4rem;
+  border: none;
+  border-radius: 9px;
+  background-color: #37b24d;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-completed:hover {
+  background-color: #2b8a3e;
+}
+
+.btn-delete {
+  padding: 1.8rem 2.4rem;
+  border: none;
+  border-radius: 9px;
+  background-color: #dc143c;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #c61236;
+}

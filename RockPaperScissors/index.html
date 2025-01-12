@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="titel">Rock Paper Scissors</div>
+      <div class="wining-message"></div>
+      <div class="players">
+        <p class="player-score">Player: <span class="p-score">0</span></p>
+        <div class="player"></div>
+        <p class="computer-score">Computer: <span class="c-score">0</span></p>
+        <div class="computer"></div>
+      </div>
+      <div class="weapons">
+        <button type="button" class="rock btn" onclick="checker('✊')">
+          <i class="far fa-hand-rock"></i>
+        </button>
+        <button type="button" class="paper btn" onclick="checker('✋')">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button type="button" class="scissors btn" onclick="checker('✌')">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="winner"></div>
+      <button type="button" class="reset-game hidden">RESET</button>
+    </section>
+    <script src="game.js"></script>
+  </body>
+</html>

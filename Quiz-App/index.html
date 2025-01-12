@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz--app-container">
+      <button class="btn start">Start Quiz</button>
+      <div class="app-content hidden">
+        <div class="progress-bar"></div>
+        <div><span class="remaining">1/5</span></div>
+        <p class="question">What is the best programing language in 2023</p>
+
+        <div class="options-container">
+          <p class="option">Python</p>
+          <p class="option">JavaScript</p>
+          <p class="option">C#</p>
+          <p class="option">Java</p>
+        </div>
+        <div class="controls">
+          <button class="btn previous hidden" type="button">Previous</button>
+          <button class="btn next" type="button">Next</button>
+        </div>
+      </div>
+      <p class="result hidden"></p>
+    </div>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

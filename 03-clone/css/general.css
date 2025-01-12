@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 140rem;
+  padding: 20rem 12rem;
+  margin: 0 auto;
+}
+
+.heading-primary {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 2.4rem 0 1.2rem 2.4rem;
+}
